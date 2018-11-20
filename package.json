@@ -1,0 +1,45 @@
+{
+  "name": "music-api",
+  "version": "1.0.0",
+  "description": "A Music Restful API for Egghead Course: Secure Restful API with Nodejs, and Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js --exec babel-node --presets env",
+    "build": "babel src -d dist --source-maps inline --copy-files",
+    "heroku-postbuild": "npm install",
+    "start": "babel-node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "ibm-cos-sdk": "^1.2.3",
+    "joi": "^13.3.0",
+    "jsonwebtoken": "^8.2.2",
+    "moment": "^2.22.2",
+    "mongoose": "^5.1.3",
+    "mongoose-paginate": "^5.0.3",
+    "mongoose-unique-validator": "^2.0.1",
+    "morgan": "^1.9.0",
+    "multer": "^1.3.1",
+    "node-telegram-bot-api": "^0.30.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "request": "^2.88.0",
+    "swagger-ui-express": "^3.0.10",
+    "uuid": "^3.3.2",
+    "zalo-sdk": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "nodemon": "^1.17.3"
+  }
+}
